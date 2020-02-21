@@ -124,7 +124,7 @@ namespace WEB_API_DI_Test
             command.Parameters.AddWithValue("@updated_time", DateTime.Now);
 
             command.Prepare();
-            //var  = command.ExecuteScalar();
+            command.ExecuteScalar();
             _connection.Close();
 
             return $"Post ID: {ID} updated";

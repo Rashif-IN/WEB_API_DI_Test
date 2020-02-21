@@ -56,8 +56,8 @@ namespace WEB_API_DI_Test.Controllers
         [HttpPatch("{id}")]
         public IActionResult UpdatePost([FromBody]JsonPatchDocument<Post> postss, int ID)
         {
-            
-            return Ok(DATABASE.UpdatePost(postss, ID));
+            var result = DATABASE.UpdatePost(postss, ID);
+            return Ok(result);
             
         }
     }
