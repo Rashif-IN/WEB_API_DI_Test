@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{9C4D7BA4-B899-4CD5-9777-21D361474D72}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/PostController.cs">
+    <Files>
+      <File FileName="Models/PostContact.cs" Line="13" Column="24" />
+      <File FileName="Controllers/PostController.cs" Line="1" Column="1" />
+      <File FileName="Startup.cs" />
+      <File FileName="Database.cs" Line="129" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WEB_API_DI_Test" expanded="True">
+            <Node name="WEB_API_DI_Test" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="PostController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.WEB__API__DI__Test PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
