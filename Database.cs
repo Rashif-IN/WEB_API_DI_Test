@@ -114,20 +114,20 @@ namespace WEB_API_DI_Test
 
             postss.ApplyTo(oldPost);
 
-            command.CommandText = $"UPDATE Post SET (title,content,tags,status,updated_time) = (@title,@content,@tags,@status,@updated_time) WHERE id = {ID}";
+            command.CommandText = $"UPDATE post SET (title,content,tags,status,updated_time) = (@title,@content,@tags,@status,@updated_time) WHERE id = {ID}";
             
             command.Parameters.AddWithValue("@title", oldPost.title);
             command.Parameters.AddWithValue("@content", oldPost.content);
             command.Parameters.AddWithValue("@tags", oldPost.tags);
             command.Parameters.AddWithValue("@status", oldPost.status);
 
-            command.Parameters.AddWithValue("@updated_time", oldPost.updated_time);
+            command.Parameters.AddWithValue("@updated_time", DateTime.Now);
 
             command.Prepare();
-            var result = command.ExecuteScalar();
+            //var  = command.ExecuteScalar();
             _connection.Close();
 
-            return $"Post ID: {(int)result} updated";
+            return $"Post ID: {ID} updated";
         }
 
 
@@ -148,11 +148,11 @@ namespace WEB_API_DI_Test
 }
 
 
-
+//patch postman
 //[
 //	{
 //		"do" : "replace",
-//		"path" : "username",
+//		"path" : "username", 
 //		"value" : "hftdhrdhbxdehrx"
 
 //	},

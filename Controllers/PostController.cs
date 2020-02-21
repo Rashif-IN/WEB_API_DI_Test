@@ -5,9 +5,7 @@ using WEB_API_DI_Test.Models;
 
 
 using System.Collections.Generic;
-
-
-
+using Microsoft.AspNetCore.JsonPatch;
 
 namespace WEB_API_DI_Test.Controllers
 {
@@ -55,10 +53,12 @@ namespace WEB_API_DI_Test.Controllers
         }
 
 
-        //[HttpPatch("{id}")]
-        //public IActionResult PatchAuthor([FromBody]JsonPatchDocument<Post> patch, int Id)
-        //{
-
-        //}
+        [HttpPatch("{id}")]
+        public IActionResult UpdatePost([FromBody]JsonPatchDocument<Post> postss, int ID)
+        {
+            
+            return Ok(DATABASE.UpdatePost(postss, ID));
+            
+        }
     }
 }
